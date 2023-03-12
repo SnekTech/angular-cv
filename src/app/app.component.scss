@@ -1,0 +1,37 @@
+// layout
+.header {
+  h1 {
+    margin: 0;
+  }
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 80rem;
+  display: flex;
+
+  .sidebar {
+    flex-basis: 20ch;
+  }
+  .content {
+    flex-grow: 1;
+    margin: 1rem;
+  }
+}
+
+// content
+.header {
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+}
+
+.page {
+  .sidebar {
+    background-color: var(--primary-dark);
+  }
+
+  .content {
+    padding: 2rem;
+    color: var(--on-surface)
+  }
+}

@@ -1,7 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
 
-body {
-  background-color: steelblue;
+:root {
+  --primary-900: #8e0077;
+  --primary-800: #b90080;
+  --primary-700: #d00085;
+  --primary-600: #e8008c;
+  --primary-500: #fb0091;
+  --primary-400: #f501a7;
+  --primary-300: #f352ba;
+  --primary-200: #f389cf;
+  --primary-100: #f5b9e3;
+  --primary-50: #fbe3f4;
 
+  --primary-dark: var(--primary-600);
+  --primary: var(--primary-500);
+  --primary-light: var(--primary-400);
+
+  // complementary
+  --secondary-900: #008f00;
+  --secondary-800: #00b400;
+  --secondary-700: #00c900;
+  --secondary-600: #00df11;
+  --secondary-500: #00f11c;
+  --secondary-400: #01f54f;
+  --secondary-300: #67f976;
+  --secondary-200: #9efca1;
+  --secondary-100: #c8fec7;
+  --secondary-50: #e9ffe9;
+
+  --secondary: var(--secondary-500);
+
+  // surface color
+  --background-c: #ffffff;
+  --surface-c: #ffffff;
+  --error-c: #b00020;
+
+  // typography colors
+  --on-primary: #ffffff;
+  --on-background: #000;
+  --on-surface: #000;
+  --on-error: #fff;
+}
+
+
+body {
+  margin: 0;
+  background-color: var(--background-c);
   font-family: Calibri, "Microsoft YaHei", sans-serif;
+  color: var(--on-primary);
+}
+
+img {
+  display: block;
+  width: 100%;
 }
