@@ -1,22 +1,12 @@
 import {bootstrapApplication} from "@angular/platform-browser";
+import {provideRouter} from "@angular/router";
 import {AppComponent} from "./app/app.component";
-import {provideRouter, Routes} from "@angular/router";
+import {appRoutes} from "./app/appRoutes";
 
-const routes: Routes = [
-  {
-    path: 'game-dev',
-    loadComponent: () => import("./app/game-dev/game-dev.component")
-      .then(mod => mod.GameDevComponent)
-  },
-  {
-    path: 'software-engineer',
-    loadComponent: () => import("./app/software-engineer/software-engineer.component")
-      .then(mod => mod.SoftwareEngineerComponent)
-  }
-];
+
 bootstrapApplication(AppComponent, {
   providers: [
-    provideRouter(routes)
+    provideRouter(appRoutes)
   ]
 })
   .then(_ => console.log("App has launched successfully!"))

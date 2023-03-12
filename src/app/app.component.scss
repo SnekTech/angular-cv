@@ -11,7 +11,7 @@
   display: flex;
 
   .sidebar {
-    flex-basis: 20ch;
+    flex-basis: 30ch;
   }
   .content {
     flex-grow: 1;
@@ -34,7 +34,7 @@
 
 .page {
   .sidebar {
-    background-color: var(--primary-dark);
+    background-color: var(--primary-darker);
   }
 
   .content {
