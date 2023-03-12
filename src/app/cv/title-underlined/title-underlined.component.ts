@@ -6,15 +6,13 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="container">
-      <div class="title">
-        <ng-content></ng-content>
-      </div>
-      <div class="line"></div>
+    <div class="title">
+      <ng-content></ng-content>
     </div>
+    <div class="line"></div>
   `,
   styles: [`
-    .container {
+    :host {
       display: flex;
       flex-direction: column;
       padding: 0.5rem;
