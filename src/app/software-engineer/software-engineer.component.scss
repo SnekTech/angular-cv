@@ -1,0 +1,41 @@
+.cv {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .header {
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--on-primary);
+
+    display: flex;
+    align-items: center;
+
+    img.avatar {
+      margin-right: 1rem;
+      width: 6rem;
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    .name {
+      font-size: xx-large;
+      margin-bottom: 0.5rem;
+    }
+
+  }
+
+  .body {
+    display: flex;
+    flex-grow: 1;
+
+    .content {
+      flex-grow: 1;
+    }
+
+    .sidebar {
+      flex-basis: 15rem;
+      background-color: var(--primary-50);
+    }
+  }
+
+}
