@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
       flex-direction: column;
       padding: 0.5rem;
 
-      color: var(--on-surface);
+      color: var(--on-surface-high-emphasis);
       font-weight: bolder;
       font-size: larger;
 
