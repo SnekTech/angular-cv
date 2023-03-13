@@ -12,6 +12,7 @@ type FontSize = 'normal' | 'medium' | 'small' | 'large' | string;
       span {
         font-size: var(--fontSize);
         font-variation-settings: var(--variation);
+        color: var(--fontColor);
       }
     </style>
     <span class="material-symbols-outlined">
@@ -21,14 +22,17 @@ type FontSize = 'normal' | 'medium' | 'small' | 'large' | string;
 })
 export class IconComponent {
   @Input() isFill: boolean = false;
+
   @HostBinding('style.--fontSize')
   @Input() size: FontSize = 'normal'
+
   @HostBinding('style.--variation')
   get variation() {
     return `'FILL' ${this.isFill ? 1 : 'normal'}`;
   }
 
-  get fontSize() {
-    return this.size;
+  @HostBinding('style.--fontColor')
+  get fontColor() {
+    return `var(--${this.isFill ? 'primary' : 'on-surface'})`;
   }
 }
