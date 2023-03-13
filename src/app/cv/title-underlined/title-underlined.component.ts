@@ -22,9 +22,9 @@ import { CommonModule } from '@angular/common';
       font-size: larger;
 
       .line {
-        //background-color: var(--on-surface);
+        background-color: var(--on-surface-disabled);
 
-        border: 1px solid var(--on-surface);
+        height: 2px;
         margin-top: 0.3rem;
       }
     }

@@ -40,6 +40,14 @@
   --on-primary: #ffffff;
   --on-background: #000;
   --on-surface: #000;
+  // -----text legibility------
+  // high, 87%, 0xde
+  // medium, 60%, 0x99
+  // disabled, 38%, 0x61
+  // -------------------------
+  --on-surface-high-emphasis: #000000de;
+  --on-surface-medium-emphasis: #00000099;
+  --on-surface-disabled: #00000061;
   --on-error: #fff;
 }
 
