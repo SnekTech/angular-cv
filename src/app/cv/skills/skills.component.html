@@ -1,0 +1,8 @@
+<app-title-underlined>技能</app-title-underlined>
+
+<div class="skill" *ngFor="let skill of skills">
+  <div class="name">{{skill.skillName}}</div>
+  <div class="grasp">
+    <app-rating [rating]="skill.grasp"></app-rating>
+  </div>
+</div>

@@ -7,12 +7,13 @@ import {IconComponent} from "./icon.component";
   standalone: true,
   imports: [CommonModule, IconComponent],
   template: `
-    <ng-container *ngFor="let rating of [].constructor(maxScore); let i = index;">
-      <app-icon [isFill]="i < score" size="medium">grade</app-icon>
+    <ng-container *ngFor="let _ of [].constructor(maxScore); let i = index;">
+      <app-icon [isFill]="i < rating" [size]="iconSize">grade</app-icon>
     </ng-container>
   `,
 })
 export class RatingComponent {
-  maxScore = 5;
-  @Input() score: number = 3;
+  readonly maxScore = 5;
+  @Input() rating: number = 3;
+  @Input() iconSize: string = 'normal';
 }
