@@ -18,7 +18,7 @@ import { CommonModule } from '@angular/common';
       flex-direction: column;
 
       font-weight: bolder;
-      font-size: large;
+      font-size: 1.5rem;
 
       .line {
         background-color: var(--on-surface-disabled);

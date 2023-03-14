@@ -49,6 +49,9 @@
   --on-surface-medium-emphasis: #00000099;
   --on-surface-disabled: #00000061;
   --on-error: #fff;
+
+  --root-fontSize: 12px;
+  font-size: var(--root-fontSize);
 }
 
 

@@ -23,9 +23,13 @@ import {KeywordsComponent} from "../keywords.component";
     }
     .company {
       font-weight: bold;
+      font-size: 1.2rem;
     }
     .job {
       font-style: italic;
+    }
+    app-keywords {
+      margin: 0.5rem 0;
     }
   `]
 })

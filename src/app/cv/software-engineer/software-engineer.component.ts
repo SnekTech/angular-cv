@@ -1,22 +1,18 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {TitleUnderlinedComponent} from "../title-underlined/title-underlined.component";
-import {ContactComponent} from "../contact/contact.component";
-import {SkillsComponent} from "../skills/skills.component";
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {EducationComponent} from "../education/education.component";
 import {ExperienceComponent} from "../experience/experience.component";
+import {RightSideComponent} from "../right-side/right-side.component";
 
 @Component({
   selector: 'app-software-engineer',
   standalone: true,
-    imports: [
-        CommonModule,
-        TitleUnderlinedComponent,
-        ContactComponent,
-        SkillsComponent,
-        EducationComponent,
-        ExperienceComponent,
-    ],
+  imports: [
+    CommonModule,
+    EducationComponent,
+    ExperienceComponent,
+    RightSideComponent,
+  ],
   templateUrl: './software-engineer.component.html',
   styleUrls: ['./software-engineer.component.scss']
 })

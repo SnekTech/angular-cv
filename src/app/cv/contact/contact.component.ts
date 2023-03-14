@@ -19,13 +19,11 @@ import {ContactItem} from "./contactItem";
   `,
   styles: [`
     .items {
-      margin: 0;
-      padding: 0 0.5rem;
+      margin: 0.5rem;
       list-style: none;
 
       .name {
         font-weight: bold;
-        font-size: small;
       }
     }
   `]

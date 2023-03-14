@@ -14,11 +14,10 @@ import {CommonModule} from "@angular/common";
     :host {
       display: flex;
       color: var(--on-primary);
-      font-size: small;
 
       .key {
         background-color: var(--primary);
-        padding: 0.2rem;
+        padding: 0.3rem;
         border-radius: 4px;
         margin-right: 0.2rem;
       }

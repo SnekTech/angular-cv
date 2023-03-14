@@ -4,7 +4,7 @@
   height: 100%;
 
   .header {
-    padding: 1rem;
+    padding: 1.6rem;
     background-color: var(--primary);
     color: var(--on-primary);
 
@@ -12,14 +12,17 @@
     align-items: center;
 
     img.avatar {
-      margin-right: 1rem;
-      width: 6rem;
+      margin-right: 2rem;
+      width: 10rem;
       clip-path: circle(50% at 50% 50%);
     }
 
     .name {
-      font-size: xx-large;
+      font-size: 3rem;
       margin-bottom: 0.5rem;
+    }
+    .target {
+      font-size: 1.5rem;
     }
 
   }

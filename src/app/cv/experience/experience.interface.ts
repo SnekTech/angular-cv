@@ -14,7 +14,7 @@ const tencent: ExperienceInfo = {
     from: '2021年07月',
     to: '2022年08月'
   },
-  company: '上海腾讯',
+  company: '腾讯（上海）',
   job: '客户端开发(实习)',
   department: 'QQ 影像中心/引擎组',
   keywords: ['图形学', 'C++', '工具开发']
