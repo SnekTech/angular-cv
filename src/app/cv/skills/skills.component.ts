@@ -4,15 +4,22 @@ import {TitleUnderlinedComponent} from "../title-underlined/title-underlined.com
 import {RatingComponent} from "../rating.component";
 
 type Skill = {
-  skillName: string,
+  name: string,
   grasp: 1 | 2 | 3 | 4 | 5,
 }
 
 const syfSkills: Skill[] = [
-  {skillName: 'C#', grasp: 5},
-  {skillName: 'C++', grasp: 4},
-  {skillName: 'Unity', grasp: 4},
-  {skillName: 'JavaScript/TypeScript', grasp: 4},
+  {name: 'C#', grasp: 5},
+  {name: 'C++', grasp: 4},
+  {name: 'Unity', grasp: 4},
+  {name: 'JavaScript/TypeScript', grasp: 4},
+  {name: '计算机图形学', grasp: 4},
+  {name: '算法与数据结构', grasp: 4},
+  {name: '设计模式', grasp: 4},
+  {name: '操作系统', grasp: 4},
+  {name: '计算机网络', grasp: 3},
+  {name: '数据库', grasp: 3},
+  {name: 'Git', grasp: 5},
 ];
 
 @Component({

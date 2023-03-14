@@ -8,7 +8,7 @@ import {IconComponent} from "./icon.component";
   imports: [CommonModule, IconComponent],
   template: `
     <ng-container *ngFor="let _ of [].constructor(maxScore); let i = index;">
-      <app-icon [isFill]="i < rating" [size]="iconSize">grade</app-icon>
+      <app-icon [isFill]="i < rating" [size]="iconSize">circle</app-icon>
     </ng-container>
   `,
 })
