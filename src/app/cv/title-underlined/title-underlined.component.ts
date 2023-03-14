@@ -15,9 +15,8 @@ import { CommonModule } from '@angular/common';
     :host {
       display: flex;
       flex-direction: column;
-      padding: 0.5rem;
+      padding: 0.5rem 0;
 
-      color: var(--on-surface-high-emphasis);
       font-weight: bolder;
       font-size: larger;
 
