@@ -15,12 +15,8 @@ export const syfProjects: Project[] = [
   },
   {
     name: 'Roguelike 扫雷游戏',
-    keywords: ['毕业设计', 'Unity', 'Roguelike', '设计模式']
+    keywords: ['毕业设计', 'C#', 'Unity', 'Roguelike', '设计模式', 'TDD 测试驱动开发']
   },
-  {
-    name: '3D 人体标注工具',
-    keywords: ['C++', 'Filament', 'Dear ImGui']
-  }
 ]
 
 @Component({

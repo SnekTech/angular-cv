@@ -24,6 +24,7 @@ import {ContactItem} from "./contactItem";
 
       .name {
         font-weight: bold;
+        font-size: var(--subtitle-fSize);
       }
     }
   `]

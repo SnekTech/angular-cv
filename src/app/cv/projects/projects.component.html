@@ -5,15 +5,56 @@
 </style>
 
 <app-title-underlined>个人项目</app-title-underlined>
-<ng-container *ngFor="let projectDetail of [renderer, minesweeper, marker3d]; let i = index">
+<ng-container *ngFor="let projectDetail of [renderer, minesweeper]; let i = index">
   <app-project-info [info]="projects[i]" [detail]="projectDetail"></app-project-info>
 </ng-container>
 
 <ng-template #renderer>
   <ul>
-    <li>sss</li>
+    <li>
+      为了了解渲染管线底层的实现方法，使用纯软件的方式手动模拟硬件渲染管线的图形数据处理流程，
+      通过各种 3D 数学运算将 3D 坐标系中的模型正确渲染到 2D 的显示设备上
+    </li>
+    <li>
+      基于 <code>cmake mingw glfw glad</code> 等技术在 Windows 桌面端搭建一个渲染器框架，
+      使用 OpenGL 动态生成一个指定尺寸的纹理用来模拟渲染器的输出屏幕
+    </li>
+    <li>
+      提供一个 <code>PutPixel(x, y, color)</code> 方法来支持渲染一个像素至模拟屏幕纹理的某个坐标，
+      以此为基础使用扫描线算法实现三角形的渲染，进而构建出整个软件渲染管线
+    </li>
+    <li>
+      实现了真实渲染管线的部分基础特性，包括 MVP 矩阵、左上规则的三角形光栅化、背面和深度剔除、
+      纹理贴图、Shader 可配置、平行光源和点光源、镜面反射等
+    </li>
   </ul>
 </ng-template>
 
-<ng-template #minesweeper></ng-template>
-<ng-template #marker3d></ng-template>
+<ng-template #minesweeper>
+  <ul>
+    <li>
+      基于 Unity 引擎开发，使用 Roguelike 游戏中常见的随机性元素对扫雷游戏的玩法进行扩展
+    </li>
+    <li>
+      加入倒计时模式；加入生命值的概念（踩雷后减少生命值）；加入可以对玩家和雷区产生影响的道具和事件；
+      加入武器系统，武器是玩家探索雷区的工具，提供包括揭开单元格和标记旗帜等各种功能
+    </li>
+    <li>
+      大量使用 Unity 提供的可编程对象 Scriptable Object，使得游戏内容可以在编辑器中配置，
+      比如通过组合不同效果 Scriptable Object 可以生产出各种道具
+    </li>
+    <li>
+      使用像素风格的美术素材，实现了一个简单的逐帧动画播放模块，使用有限状态机来实现不同动画的衔接
+    </li>
+    <li>
+      实现了部分 Unity 自定义编辑器来批量处理游戏内容。实现管理道具池、事件池的随机池编辑器，
+      可以在创建新道具或删除已有道具时动态修改道具池；
+      实现一套从像素动画编辑器 Aseprite 到 自定义逐帧动画模块的美术资源处理流程，
+      使用动画序列帧导出时的 json 元数据，配合自定义编辑器，动态更新游戏内的动画资源
+    </li>
+    <li>
+      尝试使用测试驱动开发的理论完成了核心功能的开发，
+      使用 Fluent Assertions 和 NSubstitute 等第三方库设计了高质量的单元测试
+    </li>
+  </ul>
+</ng-template>
