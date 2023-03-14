@@ -17,9 +17,9 @@ import {CommonModule} from "@angular/common";
 
       .key {
         background-color: var(--primary);
-        padding: 0.3rem;
+        padding: 0.2rem 0.3rem;
         border-radius: 4px;
-        margin-right: 0.2rem;
+        margin-right: 0.3rem;
       }
     }
   `]

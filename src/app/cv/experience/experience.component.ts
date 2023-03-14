@@ -18,7 +18,6 @@ import {KeywordsComponent} from "../keywords.component";
     KeywordsComponent
   ],
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
   experiences: ExperienceInfo[];

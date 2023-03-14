@@ -27,7 +27,7 @@ const handChina: ExperienceInfo = {
   company: '上海汉得信息技术股份有限公司',
   job: 'Web 前端开发(实习)',
   department: '技术发展中心/框架组',
-  keywords: ['组件库', 'React.js']
+  keywords: ['组件库', 'CSS', 'TypeScript']
 };
 
 export const syfExperiences = [tencent, handChina];

@@ -1,0 +1,19 @@
+<style>
+  ul {
+    margin-left: 2rem;
+  }
+</style>
+
+<app-title-underlined>个人项目</app-title-underlined>
+<ng-container *ngFor="let projectDetail of [renderer, minesweeper, marker3d]; let i = index">
+  <app-project-info [info]="projects[i]" [detail]="projectDetail"></app-project-info>
+</ng-container>
+
+<ng-template #renderer>
+  <ul>
+    <li>sss</li>
+  </ul>
+</ng-template>
+
+<ng-template #minesweeper></ng-template>
+<ng-template #marker3d></ng-template>

@@ -23,7 +23,7 @@ import {KeywordsComponent} from "../keywords.component";
     }
     .company {
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: var(--subtitle-fSize);
     }
     .job {
       font-style: italic;
