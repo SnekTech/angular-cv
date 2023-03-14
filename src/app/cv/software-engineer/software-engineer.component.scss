@@ -35,6 +35,7 @@
 
     .sidebar {
       flex-basis: 15rem;
+      flex-shrink: 0;
       padding: 0.5rem;
       background-color: var(--primary-50);
     }

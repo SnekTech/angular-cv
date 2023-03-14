@@ -20,7 +20,7 @@ import {ContactItem} from "./contactItem";
   styles: [`
     .items {
       margin: 0;
-      padding: 0.5rem;
+      padding: 0 0.5rem;
       list-style: none;
 
       .name {

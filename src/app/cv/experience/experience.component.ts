@@ -10,21 +10,8 @@ import {TitleUnderlinedComponent} from "../title-underlined/title-underlined.com
   selector: 'app-experience',
   standalone: true,
   imports: [CommonModule, DateRangeComponent, ExperienceItemComponent, TitleUnderlinedComponent],
-  template: `
-    <app-title-underlined>实践经历</app-title-underlined>
-    <div *ngFor="let content of [c1, c2]; let i = index;">
-      <app-experience-item [info]="experiences[i]" [content]="content"></app-experience-item>
-    </div>
-
-    <ng-template #c1>
-      c1
-    </ng-template>
-    <ng-template #c2>
-      c2
-    </ng-template>
-  `,
-  styles: [
-  ]
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
   experiences: ExperienceInfo[];

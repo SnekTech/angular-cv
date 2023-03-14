@@ -11,7 +11,7 @@ import {ExperienceInfo} from "./experience.interface";
       <app-date-range [range]="info.dateRange"></app-date-range>
       <div class="content">
           <div class="company">{{info.company}}</div>
-          <div>{{info.job}} {{info.department}}</div>
+          <div class="job">{{info.job}} {{info.department}}</div>
           <ng-container *ngTemplateOutlet="content"></ng-container>
       </div>
   `,
@@ -21,6 +21,9 @@ import {ExperienceInfo} from "./experience.interface";
     }
     .company {
       font-weight: bold;
+    }
+    .job {
+      font-style: italic;
     }
   `]
 })

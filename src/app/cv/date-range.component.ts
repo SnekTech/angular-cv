@@ -13,8 +13,9 @@ export type DateRange = {
   template: `
     <style>
       :host {
-        --flexBasis: 7rem;
-        flex-basis: var(--flexBasis);
+        flex-basis: 7rem;
+        flex-shrink: 0;
+
         font-weight: bold;
         font-size: 0.9rem;
       }
