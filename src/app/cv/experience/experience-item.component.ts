@@ -2,16 +2,18 @@ import {Component, Input, TemplateRef} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {DateRangeComponent} from "../date-range.component";
 import {ExperienceInfo} from "./experience.interface";
+import {KeywordsComponent} from "../keywords.component";
 
 @Component({
   selector: 'app-experience-item',
   standalone: true,
-  imports: [CommonModule, DateRangeComponent],
+  imports: [CommonModule, DateRangeComponent, KeywordsComponent],
   template: `
       <app-date-range [range]="info.dateRange"></app-date-range>
       <div class="content">
           <div class="company">{{info.company}}</div>
           <div class="job">{{info.job}} {{info.department}}</div>
+          <app-keywords [keywords]="info.keywords"></app-keywords>
           <ng-container *ngTemplateOutlet="content"></ng-container>
       </div>
   `,
