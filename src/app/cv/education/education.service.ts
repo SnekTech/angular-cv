@@ -16,8 +16,8 @@ export const syfEducationItems: EducationItem[] = [
   {
     university: "中国科学技术大学",
     dateRange: {
-      from: '2020年9月',
-      to: '2023年6月'
+      from: '2020年09月',
+      to: '2023年06月'
     },
     city: "苏州",
     major: "软件工程",
@@ -29,8 +29,8 @@ export const syfEducationItems: EducationItem[] = [
   {
     university: "云南大学",
     dateRange: {
-      from: '2015年9月',
-      to: '2019年6月'
+      from: '2015年09月',
+      to: '2019年06月'
     },
     city: "昆明",
     major: "软件工程",

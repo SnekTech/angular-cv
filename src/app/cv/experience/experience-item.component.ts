@@ -8,16 +8,21 @@ import {ExperienceInfo} from "./experience.interface";
   standalone: true,
   imports: [CommonModule, DateRangeComponent],
   template: `
-      <div class="date-range">
-          <app-date-range [range]="info.dateRange"></app-date-range>
-      </div>
+      <app-date-range [range]="info.dateRange"></app-date-range>
       <div class="content">
-          <div>{{info.company}}</div>
+          <div class="company">{{info.company}}</div>
           <div>{{info.job}} {{info.department}}</div>
-          <ng-container [ngTemplateOutlet]="content"></ng-container>
+          <ng-container *ngTemplateOutlet="content"></ng-container>
       </div>
-
   `,
+  styles: [`
+    :host {
+      display: flex;
+    }
+    .company {
+      font-weight: bold;
+    }
+  `]
 })
 export class ExperienceItemComponent {
   @Input() info!: ExperienceInfo;

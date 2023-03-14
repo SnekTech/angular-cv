@@ -16,6 +16,7 @@ export type DateRange = {
         --flexBasis: 7rem;
         flex-basis: var(--flexBasis);
         font-weight: bold;
+        font-size: 0.9rem;
       }
     </style>
 
