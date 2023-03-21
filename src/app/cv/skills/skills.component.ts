@@ -9,7 +9,7 @@ type Skill = {
 }
 
 const syfSkills: Skill[] = [
-  {name: 'C#', grasp: 5},
+  {name: 'C#/.Net', grasp: 5},
   {name: 'C++', grasp: 4},
   {name: 'Unity', grasp: 4},
   {name: 'JavaScript/TypeScript', grasp: 4},
@@ -18,7 +18,8 @@ const syfSkills: Skill[] = [
   {name: '设计模式', grasp: 4},
   {name: '操作系统', grasp: 4},
   {name: '计算机网络', grasp: 3},
-  {name: '数据库', grasp: 3},
+  {name: '数据库', grasp: 4},
+  {name: 'Angular', grasp: 4},
   {name: 'Git', grasp: 5},
 ];
 
