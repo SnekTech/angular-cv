@@ -1,5 +1,7 @@
 // layout
 .header {
+  padding: 1rem 2rem;
+  background-color: var(--primary);
   h1 {
     margin: 0;
     font-size: 3rem;
@@ -12,10 +14,13 @@
 
   .sidebar {
     flex-basis: 30ch;
+    background-color: var(--primary-darker);
   }
   .content {
     flex-grow: 1;
-    margin: 1rem;
+    margin: 2rem auto;
+
+    color: var(--on-surface-high-emphasis);
 
     .cv {
       width: 210mm;
@@ -23,22 +28,5 @@
       border: 2px dashed var(--on-surface);
       margin: auto;
     }
-  }
-}
-
-// content
-.header {
-  padding: 1rem 2rem;
-  background-color: var(--primary);
-}
-
-.page {
-  .sidebar {
-    background-color: var(--primary-darker);
-  }
-
-  .content {
-    padding: 2rem;
-    color: var(--on-surface-high-emphasis)
   }
 }
