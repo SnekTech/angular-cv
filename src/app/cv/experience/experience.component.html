@@ -5,23 +5,15 @@
 
 <ng-template #tencent>
   <ul>
-    <li>
-      常规需求开发，主要是为手机 QQ 应用提供图形渲染相关的技术支持，
-      涉及到使用 <code>C++</code> 和 <code>lua</code> 脚本驱动应用内置的虚幻引擎模块实现各种渲染效果
-    </li>
-    <li>
-      自动化工具开发，包括小组内部使用的批量截图测试工具、与流水线系统交互的资源整理工具，
-      以及一个为 AI 组提供数据标注支持的 3D 人体模型标注工具。
-      这些工具显著提高了执行相关任务的工作效率
+    <li *ngFor="let point of experiences[0].points">
+      {{point}}
     </li>
   </ul>
 </ng-template>
 <ng-template #handChina>
   <ul>
-    <li>
-      参与开发和维护一套定制的 React 组件库，包括按钮、菜单、卡片等常见的 UI 组件，
-      以及针对部门业务需求设计的特定组件如自动对接后台数据的数据表组件。
-      定制的组件库提高了多个部门在开发前端页面时的工作效率
+    <li *ngFor="let point of experiences[1].points">
+      {{point}}
     </li>
   </ul>
 </ng-template>

@@ -1,7 +1,7 @@
 import {Component, Input, TemplateRef} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {DateRangeComponent} from "../date-range.component";
-import {ExperienceInfo} from "./experience.interface";
+import {Experience} from "./experience.interface";
 import {KeywordsComponent} from "../keywords.component";
 
 @Component({
@@ -34,6 +34,6 @@ import {KeywordsComponent} from "../keywords.component";
   `]
 })
 export class ExperienceItemComponent {
-  @Input() info!: ExperienceInfo;
+  @Input() info!: Experience;
   @Input() content!: TemplateRef<any>;
 }
