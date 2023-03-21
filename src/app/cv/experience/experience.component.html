@@ -1,19 +1,4 @@
 <app-title-underlined>实践经历</app-title-underlined>
-<div *ngFor="let content of [tencent, handChina]; let i = index;">
-  <app-experience-item [info]="experiences[i]" [content]="content"></app-experience-item>
+<div *ngFor="let experience of experiences">
+  <app-experience-item [experience]="experience"></app-experience-item>
 </div>
-
-<ng-template #tencent>
-  <ul>
-    <li *ngFor="let point of experiences[0].points">
-      {{point}}
-    </li>
-  </ul>
-</ng-template>
-<ng-template #handChina>
-  <ul>
-    <li *ngFor="let point of experiences[1].points">
-      {{point}}
-    </li>
-  </ul>
-</ng-template>
