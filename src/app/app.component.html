@@ -11,7 +11,7 @@
 
     <div class="content">
       <div class="tools">
-        <button (click)="isPrintMode = true">打印模式</button>
+        <button mat-raised-button color="accent" (click)="isPrintMode = true">打印模式</button>
       </div>
       <div class="cv">
         <router-outlet></router-outlet>
@@ -21,7 +21,7 @@
 </ng-container>
 
 <ng-container *ngIf="isPrintMode">
-  <button (click)="isPrintMode = false">正常模式</button>
+  <button mat-raised-button color="accent" (click)="isPrintMode = false">正常模式</button>
   <div class="cv">
     <router-outlet></router-outlet>
   </div>
